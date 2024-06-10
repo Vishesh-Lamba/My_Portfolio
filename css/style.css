@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Poppins';
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    /* background-color: rgb(18, 18, 18); */
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+nav div a {
+    padding: 25px;
+    cursor: pointer;
+}
+
+nav img {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.line {
+    margin: 0 10px;
+    position: relative;
+    left: 5px;
+}
+
+.link {
+    position: relative;
+    left: 15px;
+}
+
+.left {
+    cursor: default;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+}
+
+.right a:hover {
+    color: #F25B60;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* MAIN SECTION */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.firstsection {
+    font-size: 3rem;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    font-weight: bold;
+
+}
+
+.secondsection {
+    position: absolute;
+    right: 0px;
+
+}
+
+.firstsection a {
+    padding: 12px;
+    margin: 2px;
+    background-color: rgba(0, 0, 0);
+    color: rgb(173, 172, 172);
+    border: 2px solid rgb(173, 172, 172);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.firstsection a:hover {
+    background-color: #F25B60;
+    border: 2px solid #F25B60;
+    color: black;
+    transition: 0.5s;
+}
+
+.firstsection .subHeading {
+    font-size: 15px;
+    padding: 5px;
+    margin: 30px 0px;
+    font-weight: normal;
+    width: 600px;
+
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: 190px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    font-size: 14px;
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: #F25B60;
+}
+
+.footer-right i {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 5px 0;
+    }
+}
