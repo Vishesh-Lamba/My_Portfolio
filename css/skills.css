@@ -1,25 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
- .skills-section {
+.skills-section {
     position: relative;
-    top:100px;
+    top: 100px;
     display: flex;
-    justify-content:flex-start;
-    align-items:start;
+    justify-content: flex-start;
+    align-items: start;
     flex-direction: column;
     padding: 70px;
 }
 
 .skills-section .heading {
-    text-align:start;
+    text-align: start;
     font-size: 3rem;
     font-weight: bold;
     color: #F25B60;
-
 }
 
 .skills-section .subHP {
@@ -27,11 +26,10 @@
     margin: 20px 0px;
     font-weight: normal;
     width: 500px;
-    text-align:start;
+    text-align: start;
 }
- 
 
-.slider{
+.slider {
     position: absolute;
     right: 70px;
     top: 150px;
@@ -39,7 +37,8 @@
     height: 500px;
     overflow: hidden;
 }
-.slider .list{
+
+.slider .list {
     position: absolute;
     width: max-content;
     height: 100%;
@@ -48,13 +47,15 @@
     display: flex;
     transition: 1s;
 }
-.slider .list img{
+
+.slider .list img {
     width: 100%;
     max-width: 100vw;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
-.slider .buttons{
+
+.slider .buttons {
     position: absolute;
     top: 45%;
     left: 5%;
@@ -62,7 +63,8 @@
     display: flex;
     justify-content: space-between;
 }
-.slider .buttons button{
+
+.slider .buttons button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -72,7 +74,8 @@
     font-family: monospace;
     font-weight: bold;
 }
-.slider .dots{
+
+.slider .dots {
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -83,7 +86,8 @@
     display: flex;
     justify-content: center;
 }
-.slider .dots li{
+
+.slider .dots li {
     list-style: none;
     width: 10px;
     height: 10px;
@@ -92,11 +96,39 @@
     border-radius: 20px;
     transition: 0.5s;
 }
-.slider .dots li.active{
+
+.slider .dots li.active {
     width: 30px;
 }
-@media screen and (max-width: 768px){
-    .slider{
+
+@media screen and (max-width: 768px) {
+    .skills-section {
+        align-items: center;
+        padding: 20px;
+    }
+    .skills-section .heading, .skills-section .subHP {
+        text-align: center;
+    }
+    .skills-section .subHP {
+        width: 100%;
+    }
+    .slider {
+        position: static;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .slider .list {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .skills-section {
+        padding: 50px;
+    }
+    .slider {
+        width: 600px;
         height: 400px;
     }
 }
@@ -108,7 +140,7 @@
     text-align: center;
     padding: 10px 0;
     position: relative;
-    top:190px;
+    top: 190px;
     bottom: 0;
     width: 100%;
     margin-top: auto;
